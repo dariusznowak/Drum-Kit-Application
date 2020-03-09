@@ -4,7 +4,7 @@ var numOfButtons = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numOfButtons; i++) {
 
-  document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+    document.querySelectorAll(".drum")[i].addEventListener("click", function() {
 
     var buttonInnerHTML = this.innerHTML;
 
@@ -29,6 +29,7 @@ document.addEventListener("keypress", function(event) {
 function makeSound(key) {
 
   switch (key) {
+      
     case "w":
       var tom1 = new Audio("sounds/tom-1.mp3");
       tom1.play();
